@@ -15,5 +15,9 @@
       *ngFor="let product of products | filterProducts: term; let i = index"
       [product]="product"
     ></app-product>
+
+    <app-modal title="create new product">
+      <app-create-product></app-create-product>
+    </app-modal>
   </div>
 </div>
