@@ -18,7 +18,7 @@ export class CreateProductComponent implements OnInit {
   });
 
   get title() {
-    return this.form.controls.title as FormControl;
+    return this.form.value.title as string;
   }
   constructor() {}
 
